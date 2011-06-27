@@ -1,7 +1,4 @@
-(defproject
-  org.clojars.liquidz/clj-gravatar "0.0.1"
+(defproject clj-gravatar "0.0.1"
   :description "gravatar api wrapper for clojure"
-  :dependencies [[org.clojure/clojure "1.2.0"]
-                 [org.clojure/clojure-contrib "1.2.0"]
-                 ]
-  )
+  :dependencies [[org.clojure/clojure "1.3.0-beta1"]
+                 [org.clojure/data.json "0.1.0"]])
