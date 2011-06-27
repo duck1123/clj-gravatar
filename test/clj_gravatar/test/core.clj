@@ -3,7 +3,7 @@
   (:use [clojure.test]))
 
 ; http://ja.gravatar.com/site/implement/profiles/json/
-(def *test-address* "beau@dentedreality.com.au")
+(def ^:dynamic *test-address* "beau@dentedreality.com.au")
 
 (deftest test-map->get-parameter
   (are [x y] (= x y)
