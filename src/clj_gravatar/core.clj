@@ -46,7 +46,8 @@
 ; =gravatar-image
 (defn gravatar-image
   "get gravatar image url from mail address"
-  [mail-address & {:keys [size default secure?] :or {size nil, default nil, secure? false}}]
+  [mail-address & {:keys [size default secure?]
+                   :or {size nil, default nil, secure? false}}]
   (if-not (string/blank? mail-address)
     (str (gravatar-url secure?)
          "avatar/"
@@ -56,7 +57,8 @@
 ; =gravatar-profile
 (defn gravatar-profile
   "get gravatar profile from mail address"
-  [mail-address & {:keys [secure?] :or {secure? false}}]
+  [mail-address & {:keys [secure?]
+                   :or {secure? false}}]
   (if-not (string/blank? mail-address)
     (let [url (str (gravatar-url secure?) (str->md5 mail-address) ".json")]
       (try

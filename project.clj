@@ -4,7 +4,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]
-                 [org.clojure/data.json "0.1.2"]]
+                 [org.clojure/data.json "0.2.5"]]
   :codox {:exclude example
           :src-dir-uri "https://github.com/duck1123/clj-gravatar/blob/master"
           :src-linenum-anchor-prefix "L"}
